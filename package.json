@@ -1,0 +1,22 @@
+{
+  "name": "datadog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "DD_AGENT_HOST=127.0.0.1 DD_TRACE_AGENT_PORT=8126 ts-node-dev --require dd-trace/init --respawn --transpile-only --ignore-watch node_modules src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "github:types/express",
+    "@types/node": "^17.0.21",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "dd-trace": "^2.3.1",
+    "express": "^4.17.3"
+  }
+}
